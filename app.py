@@ -1,4 +1,8 @@
 import streamlit as st
+import openai
+
+# Load API key securely from Streamlit secrets
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.title("Child Therapy AI Assistant")
 
